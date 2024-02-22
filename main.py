@@ -1,10 +1,6 @@
 import random
-from fastapi import FastAPI, File, UploadFile, HTTPException
-import cv2
-import numpy as np
-import os
+from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from pydantic import Json
 
 app = FastAPI()
 
@@ -27,4 +23,3 @@ def get_data():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-    
